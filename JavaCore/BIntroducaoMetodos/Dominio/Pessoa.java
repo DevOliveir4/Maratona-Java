@@ -14,6 +14,18 @@ public class Pessoa {
     }
 
     public void SetIdade(int idade) {
+        if(idade < 0) {
+            System.out.println("Idade Inválidada");
+            return;
+        }
         this.idade = idade;
+    }
+
+    public String GetNome() {
+        return this.nome;
+    }
+
+    public int GetIdade() {
+        return this.idade;
     }
 }
